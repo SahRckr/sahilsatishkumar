@@ -1,0 +1,302 @@
+import React, { Component } from "react"
+import { Icon, Container, Header, Table, Label, Image, Modal, Button, Flag } from 'semantic-ui-react'
+import "semantic-ui-css/semantic.min.css"
+
+const randomNumGenerator = () => Math.ceil(Math.random()*1000000000)
+
+const universalStyles = {
+  padding: '25px',
+  margin: '25px',
+}
+const styles = {
+  body: {
+    backgroundColor: 'lightgrey',
+    width: '100',
+    height: '100',
+    ...universalStyles
+  },
+  borderedBox: {
+    border: '3px solid black',
+    ...universalStyles
+  },
+  dottedBorderedBox: {
+    border: '2px dotted black',
+    ...universalStyles
+    
+  }
+}
+
+const profile = {
+  name: "Sahil Satishkumar",
+  contactInformation: [
+    {
+      type: <p><Icon name='phone'/>Phone</p>,
+      detail: <a href="tel:+919449513893"><Flag name='in' />+91-944-951-3893</a>
+    },
+    {
+      type: <p><Icon name='mail square'/>SMS</p>,
+      detail: <a href="sms:+919449513893"><Flag name='in' />+91-944-951-3893</a>
+    },
+    {
+      type: <p><Icon name='mail outline'/>E-mail</p>,
+      detail: <a href="mailto:sahilsatishkumar@gmail.com">sahilsatishkumar [at] gmail [dot] com</a>
+    },
+    {
+      type: <p><Icon name='circle outline'/>Others</p>,
+      detail: <Button.Group>
+        <Button color="blue" href="https://www.linkedin.com/in/sahrckr" target="_blank" rel="noopener noreferrer">LinkedIn</Button>
+        <Button color="teal" href="https://twitter.com/sahrckr" target="_blank" rel="noopener noreferrer">Twitter</Button>
+        <Button color="red" href="https://www.quora.com/profile/Sahil-Satishkumar" target="_blank" rel="noopener noreferrer">Quora</Button>
+        <Button color="green" href="https://api.whatsapp.com/send?phone=919449513893" target="_blank" rel="noopener noreferrer">WhatsApp</Button>
+        <Button color="black" href="https://github.com/SahRckr" target="_blank" rel="noopener noreferrer">GitHub</Button>
+        <Button color="blue" href="https://fb.me/sahrckr" target="_blank" rel="noopener noreferrer">Facebook</Button>
+      </Button.Group>
+    }
+  ],
+  works: [
+    {
+      title: <p><i>Full Stack JavaScript Developer</i> at <b>Dataphi Labs</b></p>,
+      description: [
+        <p><b>Web Applications:</b> Engineered UI elements using React.js and Redux.js for client projects.</p>,
+        <p><b>Mobile Applications:</b> Built configurable applications using React-Native.</p>
+      ],
+      timeline: <p><i>Jan. 2017 - Present</i></p>,
+      location: <p>Bangalore, IN</p>,
+      logo: 'https://d1qb2nb5cznatu.cloudfront.net/startups/i/888428-20b2d0923d93e604c60663c4c73ab4a6-medium_jpg.jpg?buster=1474541089'
+    },
+    {
+      title: <p><i>Web Developer Intern</i> at <b>Print With Pi</b></p>,
+      description: [
+        <p><b>Web Applications:</b> Worked on Poster Catalogue, Internal admin dashboard using React.js and Redux.</p>,
+        <p><b>Learnings:</b> Learnt and implemented ES6 and javascript frameworks.</p>
+      ],
+      timeline: <p><i>July. 2016 - Oct. 2016</i></p>,
+      location: <p>Bangalore, IN</p>,
+      logo: 'https://lh3.googleusercontent.com/8bcMH7iKRzAbfDpuJVoxf_rfv6u70ZyB6VNqTh-q4O4QwHkQWLvyjDM9BiIYe1gnzEs=w300'
+    }
+  ],
+  education: [
+    {
+      title: <h3>Visvesvaraya Technological University</h3>,
+      subTitle: <i>Bachelor of Technology in Computer Science; Grade: N/A</i>,
+      timeline: <p><i>Aug. 2012 - Present</i></p>,
+      location: <p>Mangalore, IN</p>,
+      logo: 'http://image3.mouthshut.com/images/imagesp/925840362s.jpg'
+    },
+    {
+      title: <h3>St. Aloysius Pre University College</h3>,
+      subTitle: <i>Higher Secondary Education in PCMC; Grade: First Class</i>,
+      timeline: <p><i>June. 2010 – March. 2012</i></p>,
+      location: <p>Mangalore, IN</p>,
+      logo: 'http://staloysiuscollege.co.in/wp-content/uploads/2015/05/saeclogo.gif'
+    }
+  ],
+  projects: [
+    {
+      title: <h3>Automated Attendance System using Face Based Biometrics</h3>,
+      subTitle: <i>Final year project</i>,
+      description: [
+        <p><b>Code base:</b> Developed on MATLAB.</p>,
+        <p><b>Documentation:</b> Documented on LATEX.</p>
+      ],
+      timeline: <p><i>Jan. 2016 - May. 2016</i></p>
+    },
+    {
+      title: <h3>Draughts using OpenGL</h3>,
+      subTitle: <i>Computer Graphic and Visualisation project</i>,
+      description: [
+        <p><b>Abstract:</b> Developed the game of Draughts using existing algorithm.</p>
+      ],
+      timeline: <p><i>Feb. 2016 - April. 2015</i></p>
+    },
+    {
+      title: <h3>Organisational/Event Websites</h3>,
+      subTitle: <i>Side Projects done for an event or college organisation</i>,
+      description: [
+        <p><b>Technothon ’16:</b> Event website created using Bootstrap, for PACE TECHNOTHON 16. Implemented basic UI elements.</p>,
+        <p><b>GLUG PACE:</b> Organisational website created using Wordpress. Used customised plugins, and custom CSS. Edited parts of the wordpress theme package to GLUG PACEs requirements.</p>,
+        <p><b>Bytestruck ’16:</b> Event Website created using Bootstrap. Introduced JS countdown timer. PHP to accept registrations.</p>
+      ],
+      timeline: <p><i>Oct. 2015 - April. 2016</i></p>
+    }
+  ],
+  associations: [
+    'SCA', 'FSMK', 'GLUG PACE', 'ISTE'
+  ],
+  skills: [
+    {
+      title: <h3>Languages and frameworks:</h3>,
+      subTitle: <p>ES6, React/React-Native, Redux/Redux-Saga</p>,
+    },
+    {
+      title: <h3>Other Interests:</h3>,
+      subTitle: <p>C/C++, PHP, Java, SQL, Shell Scripting, Networking, Matlab, LATEX, Clojure</p>,
+    }
+  ],
+  hobbies: [
+    'Trending Technologies', 'Badminton', 'Table Tennis', 'Travelling', 'Technical Meetups', 'Fountain Pens', 'Blogging', 'Bike-Riding'
+  ]
+}
+
+class App extends Component {
+  constructor(props){
+    super(props)
+    this.state = {
+      showContactModal : false
+    }
+  }
+
+  showModal = (val) => this.setState({showContactModal: Boolean(val)})
+
+  getCompleteProfile = (show, contactInformation) => {
+    return(
+      <Modal 
+      open={show} 
+      onClose={()=>this.showModal(false)}
+      basic
+      closeIcon={true}
+      closeOnDimmerClick={false}
+      size='small'>
+        <Header icon='comments' content='Connect with me' />
+        <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i>You pressed the "Little red button"!</i></p>
+        <Modal.Content>
+          <Table>
+            <Table.Header/>
+            <Table.Body>
+              {contactInformation.map(contact=>(
+                <Table.Row key={randomNumGenerator()}>
+                  <Table.Cell>{contact.type}</Table.Cell>
+                  <Table.Cell>{contact.detail}</Table.Cell>
+                </Table.Row>
+              ))}
+            </Table.Body>
+          </Table>
+        </Modal.Content>
+      </Modal>
+    )
+  }
+
+  getHeader = (name, contactInformation) => (
+    <Header style={styles.borderedBox} as="h1">
+      Sahil Satishkumar
+      <Label circular color={'red'} empty onClick={()=>this.showModal(true)}/>
+      {this.getCompleteProfile(this.state.showContactModal, contactInformation)}
+    </Header>
+  )
+
+  getSubsectionGenerator = (description) => (
+    <ul>
+      {description.map(item => <li key={randomNumGenerator()}>{item}</li> )}
+    </ul>
+  )
+  
+  sectionGenerator = (section) => {
+    if(section && section.length) {
+      return(
+        <Table basic={'very'}>
+          <Table.Header/>
+          <Table.Body>
+            {section.map(sectionItem=>(
+              <Table.Row key={randomNumGenerator()}>
+                <Table.Cell width={12}>
+                  {sectionItem.title}
+                  {sectionItem.subTitle}
+                  {Array.isArray(sectionItem.description) && sectionItem.description.length && this.getSubsectionGenerator(sectionItem.description)}
+                </Table.Cell>
+                <Table.Cell textAlign='center' verticalAlign='middle'>
+                  {sectionItem.logo && <Image src={sectionItem.logo} className='centered' size={'tiny'}/>}
+                  {sectionItem.location}
+                  {sectionItem.timeline}
+                </Table.Cell>
+              </Table.Row>
+            ))}
+          </Table.Body>
+        </Table>
+      )
+    } else {
+      return null
+    }
+  }
+  getWorkExperience = (works) => {
+    return (
+      <section style={styles.dottedBorderedBox}>
+        <h3>
+          <Icon name='suitcase'/> Work Experience
+        </h3>
+        {this.sectionGenerator(works)}
+      </section>
+    )
+  }
+
+  getEducation = (education) => {
+    return (
+      <section style={styles.dottedBorderedBox}>
+          <h3>
+            <Icon name='book'/>Education
+          </h3>
+          {this.sectionGenerator(education)}
+        </section>
+    )
+  }
+
+  getProjects = (projects) => {
+    return (
+      <section style={styles.dottedBorderedBox}>
+          <h3>
+            <Icon name='ship'/>Projects
+          </h3>
+          {this.sectionGenerator(projects)}
+        </section>
+    )
+  }
+
+  getAssociations = (associations) => {
+    return (
+      <section style={styles.dottedBorderedBox}>
+          <h3>
+            <Icon name='group'/>Associations
+          </h3><br/>
+          {associations.map((association, i) => <b key={randomNumGenerator()}>{i < associations.length - 1 ? association + ' | ' : association }</b>)}
+        </section>
+    )
+  }
+
+  getSkills = (skills) => {
+    return (
+      <section style={styles.dottedBorderedBox}>
+          <h3>
+            <Icon name='code'/> Technical Skills
+          </h3>
+          {this.sectionGenerator(skills)}
+        </section>
+    )
+  }
+
+  getHobbies = (hobbies) => {
+    return (
+      <section style={styles.dottedBorderedBox}>
+          <h3>
+            <Icon name='game'/>Hobbies
+          </h3><br/>
+          {hobbies.map((hobby, i) => <b key={randomNumGenerator()}>{i < hobbies.length - 1 ? hobby + ' | ' : hobby }</b>)}
+        </section>
+    )
+  }
+
+  render() {
+    const {name, contactInformation, works, education, projects, associations, skills, hobbies} = profile
+    return (
+      <Container style={styles.body}>
+        {this.getHeader(name, contactInformation)}
+        {this.getWorkExperience(works)}
+        {this.getEducation(education)}
+        {this.getProjects(projects)}
+        {this.getAssociations(associations)}
+        {this.getSkills(skills)}
+        {this.getHobbies(hobbies)}
+      </Container>
+    )
+  }
+}
+
+export default App
