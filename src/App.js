@@ -1,7 +1,7 @@
 import React, { Component } from "react"
-import { Icon, Container, Header, Table, Label, Image, Modal } from 'semantic-ui-react'
+import { Container, Header, Table, Label, Image, Modal } from 'semantic-ui-react'
 import "semantic-ui-css/semantic.min.css"
-import {styles, profile, randomNumGenerator} from './source'
+import {styles, profile, randomNumGenerator, sections} from './source'
 class App extends Component {
   constructor(props){
     super(props)
@@ -21,8 +21,7 @@ class App extends Component {
       closeIcon={true}
       closeOnDimmerClick={false}
       size='small'>
-        <Header icon='comments' content='Connect with me' />
-        <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i>You pressed the "Little red button"!</i></p>
+        <Header image={sections.ImageMap.contactMe} content='Connect with me' />
         <Modal.Content>
           <Table>
             <Table.Header/>
@@ -40,11 +39,11 @@ class App extends Component {
     )
   }
 
-  getHeader = (name, contactInformation) => (
+  getHeader = (name) => (
     <Header style={styles.borderedBox} as="h1">
-      Sahil Satishkumar
+      <Image src={sections.ImageMap.profile} onClick={()=>this.showModal(true)}/>
+      <Header.Content>{name}</Header.Content>
       <Label circular color={'red'} empty onClick={()=>this.showModal(true)}/>
-      {this.getCompleteProfile(this.state.showContactModal, contactInformation)}
     </Header>
   )
 
@@ -81,83 +80,52 @@ class App extends Component {
       return null
     }
   }
-  getWorkExperience = (works) => {
-    return (
-      <section style={styles.dottedBorderedBox}>
-        <h3>
-          <Icon name='suitcase'/> Work Experience
-        </h3>
-        {this.sectionGenerator(works)}
-      </section>
-    )
-  }
 
-  getEducation = (education) => {
-    return (
-      <section style={styles.dottedBorderedBox}>
-          <h3>
-            <Icon name='book'/>Education
-          </h3>
-          {this.sectionGenerator(education)}
-        </section>
-    )
-  }
+  getSectionHeader = (sectionName) => (
+    <Header as='h2'>
+      <Image size="mini" src={sections.ImageMap[sectionName]}/>
+      <Header.Content>{sectionName}</Header.Content>
+    </Header>
+  )
 
-  getProjects = (projects) => {
+  getFlatList = (hobbies, sectionName) => {
     return (
-      <section style={styles.dottedBorderedBox}>
-          <h3>
-            <Icon name='ship'/>Projects
-          </h3>
-          {this.sectionGenerator(projects)}
-        </section>
-    )
-  }
-
-  getAssociations = (associations) => {
-    return (
-      <section style={styles.dottedBorderedBox}>
-          <h3>
-            <Icon name='group'/>Associations
-          </h3><br/>
-          {associations.map((association, i) => <b key={randomNumGenerator()}>{i < associations.length - 1 ? association + ' | ' : association }</b>)}
-        </section>
-    )
-  }
-
-  getSkills = (skills) => {
-    return (
-      <section style={styles.dottedBorderedBox}>
-          <h3>
-            <Icon name='code'/> Technical Skills
-          </h3>
-          {this.sectionGenerator(skills)}
-        </section>
-    )
-  }
-
-  getHobbies = (hobbies) => {
-    return (
-      <section style={styles.dottedBorderedBox}>
-          <h3>
-            <Icon name='game'/>Hobbies
-          </h3><br/>
+      <section style={styles.dottedBorderedBox} key={randomNumGenerator()}>
+          {this.getSectionHeader(sectionName)}
           {hobbies.map((hobby, i) => <b key={randomNumGenerator()}>{i < hobbies.length - 1 ? hobby + ' | ' : hobby }</b>)}
         </section>
     )
   }
 
+  getSection = (sectionData, sectionName) => {
+    return (
+      <section style={styles.dottedBorderedBox} key={randomNumGenerator()}>
+        {this.getSectionHeader(sectionName)}
+        {this.sectionGenerator(sectionData)}
+      </section>
+    )
+  }
+
+  getSections = (sectionMap, profile) => {
+    const functionMap = {
+      'section' : this.getSection,
+      'flatList' : this.getFlatList
+    }
+    const getKeyName = (val) => typeof val === 'string' ? 'flatList' : 'section'
+    return (
+      <div>
+        {Object.keys(sectionMap).map(section => functionMap[getKeyName(profile[section][0])](profile[section],sectionMap[section]))}
+      </div>
+    )
+  }
+
   render() {
-    const {name, contactInformation, works, education, projects, associations, skills, hobbies} = profile
+    const {name, contactInformation} = profile
     return (
       <Container style={styles.body}>
-        {this.getHeader(name, contactInformation)}
-        {this.getWorkExperience(works)}
-        {this.getEducation(education)}
-        {this.getProjects(projects)}
-        {this.getAssociations(associations)}
-        {this.getSkills(skills)}
-        {this.getHobbies(hobbies)}
+        {this.getHeader(name)}
+        {this.getSections(sections.sectionMap, profile)}
+        {this.getCompleteProfile(this.state.showContactModal, contactInformation)}
       </Container>
     )
   }

@@ -125,7 +125,7 @@ const profile = {
       )
     }
   ],
-  works: [
+  workExperience: [
     {
       title: (
         <p>
@@ -258,7 +258,7 @@ const profile = {
     }
   ],
   associations: ["SCA", "FSMK", "GLUG PACE", "ISTE"],
-  skills: [
+  technicalSkills: [
     {
       title: <h3>Languages and frameworks:</h3>,
       subTitle: <p>ES6, React/React-Native, Redux/Redux-Saga</p>
@@ -285,8 +285,40 @@ const profile = {
   ]
 };
 
+const workExperience = "Work Experience"
+const education = "Education"
+const projects = "Projects"
+const associations = "Associations"
+const technicalSkills = "Technical Skills"
+const hobbies = "Hobbies"
+
+const sectionMap = {
+  workExperience,
+  education,
+  projects,
+  associations,
+  technicalSkills,
+  hobbies
+}
+
+const ImageMap = {
+  profile: Images.profile,
+  [workExperience]: Images.workExperience,
+  [education]: Images.education,
+  [projects]: Images.projects,
+  [associations]: Images.associations,
+  [technicalSkills]: Images.technicalSkills,
+  [hobbies]: Images.hobbies,
+  contactMe: Images.contactMe
+}
+
+const sections = {
+  sectionMap, ImageMap
+}
+
 export {
     styles,
     profile,
-    randomNumGenerator
+    randomNumGenerator,
+    sections
 };
