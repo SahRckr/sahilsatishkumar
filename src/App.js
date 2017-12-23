@@ -1,7 +1,9 @@
 import React, { Component } from "react"
 import { Container, Header, Table, Label, Image, Modal } from 'semantic-ui-react'
-import "semantic-ui-css/semantic.min.css"
+
 import {styles, profile, randomNumGenerator, sections} from './source'
+
+import "semantic-ui-css/semantic.min.css"
 class App extends Component {
   constructor(props){
     super(props)
