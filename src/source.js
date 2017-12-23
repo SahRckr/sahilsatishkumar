@@ -1,8 +1,8 @@
 import React from "react";
-import { Icon, Button, Flag } from 'semantic-ui-react'
-import {Images} from './assets'
+import { Icon, Button, Flag } from "semantic-ui-react";
+import { Images } from "./assets";
 
-const randomNumGenerator = () => Math.ceil(Math.random()*1000000000)
+const randomNumGenerator = () => Math.ceil(Math.random() * 1000000000);
 
 const universalStyles = {
   padding: "25px",
@@ -285,12 +285,12 @@ const profile = {
   ]
 };
 
-const workExperience = "Work Experience"
-const education = "Education"
-const projects = "Projects"
-const associations = "Associations"
-const technicalSkills = "Technical Skills"
-const hobbies = "Hobbies"
+const workExperience = "Work Experience";
+const education = "Education";
+const projects = "Projects";
+const associations = "Associations";
+const technicalSkills = "Technical Skills";
+const hobbies = "Hobbies";
 
 const sectionMap = {
   workExperience,
@@ -299,26 +299,22 @@ const sectionMap = {
   associations,
   technicalSkills,
   hobbies
-}
+};
 
 const ImageMap = {
   profile: Images.profile,
+  contactMe: Images.contactMe,
   [workExperience]: Images.workExperience,
   [education]: Images.education,
   [projects]: Images.projects,
   [associations]: Images.associations,
   [technicalSkills]: Images.technicalSkills,
-  [hobbies]: Images.hobbies,
-  contactMe: Images.contactMe
-}
+  [hobbies]: Images.hobbies
+};
 
 const sections = {
-  sectionMap, ImageMap
-}
-
-export {
-    styles,
-    profile,
-    randomNumGenerator,
-    sections
+  sectionMap,
+  ImageMap
 };
+
+export { styles, profile, randomNumGenerator, sections };
