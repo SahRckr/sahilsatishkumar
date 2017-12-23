@@ -1,5 +1,6 @@
 import React from "react";
 import { Icon, Button, Flag } from 'semantic-ui-react'
+import {Images} from './assets'
 
 const randomNumGenerator = () => Math.ceil(Math.random()*1000000000)
 
@@ -147,8 +148,7 @@ const profile = {
         </p>
       ),
       location: <p>Bangalore, IN</p>,
-      logo:
-        "https://d1qb2nb5cznatu.cloudfront.net/startups/i/888428-20b2d0923d93e604c60663c4c73ab4a6-medium_jpg.jpg?buster=1474541089"
+      logo: Images.dataphi
     },
     {
       title: (
@@ -172,8 +172,7 @@ const profile = {
         </p>
       ),
       location: <p>Bangalore, IN</p>,
-      logo:
-        "https://lh3.googleusercontent.com/8bcMH7iKRzAbfDpuJVoxf_rfv6u70ZyB6VNqTh-q4O4QwHkQWLvyjDM9BiIYe1gnzEs=w300"
+      logo: Images.printwithpi_bw
     }
   ],
   education: [
@@ -186,7 +185,7 @@ const profile = {
         </p>
       ),
       location: <p>Mangalore, IN</p>,
-      logo: "http://image3.mouthshut.com/images/imagesp/925840362s.jpg"
+      logo: Images.vtu
     },
     {
       title: <h3>St. Aloysius Pre University College</h3>,
@@ -197,8 +196,7 @@ const profile = {
         </p>
       ),
       location: <p>Mangalore, IN</p>,
-      logo:
-        "http://staloysiuscollege.co.in/wp-content/uploads/2015/05/saeclogo.gif"
+      logo: Images.aloysius
     }
   ],
   projects: [
