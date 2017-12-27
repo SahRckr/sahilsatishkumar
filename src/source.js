@@ -17,7 +17,7 @@ const styles = {
     ...universalStyles
   },
   borderedBox: {
-    border: "3px solid black",
+    border: "3px groove black",
     ...universalStyles
   },
   dottedBorderedBox: {

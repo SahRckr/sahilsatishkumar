@@ -55,7 +55,7 @@ class App extends Component {
   };
 
   getHeader = name => (
-    <Header style={styles.borderedBox} as="h1">
+    <Header className='ui raised segment' style={styles.borderedBox} as="h1">
       <Image
         src={sections.ImageMap.profile}
         onClick={() => this.showModal(true)}
@@ -121,7 +121,7 @@ class App extends Component {
 
   getFlatList = (hobbies, sectionName) => {
     return (
-      <section style={styles.dottedBorderedBox} key={randomNumGenerator()}>
+      <section className='ui raised segment' style={styles.dottedBorderedBox} key={randomNumGenerator()}>
         {this.getSectionHeader(sectionName)}
         {hobbies.map((hobby, i) => (
           <b key={randomNumGenerator()}>
@@ -134,7 +134,7 @@ class App extends Component {
 
   getSection = (sectionData, sectionName) => {
     return (
-      <section style={styles.dottedBorderedBox} key={randomNumGenerator()}>
+      <section className='ui raised segment' style={styles.dottedBorderedBox} key={randomNumGenerator()}>
         {this.getSectionHeader(sectionName)}
         {this.sectionGenerator(sectionData)}
       </section>
