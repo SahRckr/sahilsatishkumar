@@ -119,13 +119,13 @@ class App extends Component {
     </Header>
   );
 
-  getFlatList = (hobbies, sectionName) => {
+  getFlatList = (flatItems, sectionName) => {
     return (
       <section className='ui raised segment' style={styles.dottedBorderedBox} key={randomNumGenerator()}>
         {this.getSectionHeader(sectionName)}
-        {hobbies.map((hobby, i) => (
+        {flatItems.map((flatItem, i) => (
           <b key={randomNumGenerator()}>
-            {i < hobbies.length - 1 ? hobby + " | " : hobby}
+            {i < flatItems.length - 1 ? flatItem + " | " : flatItem}
           </b>
         ))}
       </section>
