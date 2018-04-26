@@ -15,7 +15,7 @@ import {
   sections 
 } from "./source";
 
-import "semantic-ui-css/semantic.min.css";
+import "semantic-ui-css/semantic.css";
 class App extends Component {
   constructor(props) {
     super(props);
