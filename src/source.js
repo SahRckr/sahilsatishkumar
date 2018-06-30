@@ -144,7 +144,7 @@ const profile = {
       ],
       timeline: (
         <p>
-          <i>Jan. 2017 - Present</i>
+          <i>Jan. 2017 - Jun. 2018</i>
         </p>
       ),
       location: <p>Bangalore, IN</p>,
@@ -200,6 +200,48 @@ const profile = {
     }
   ],
   projects: [
+    {
+      title: <h3>HealthSetGo - Health Assessment Platform</h3>,
+      subTitle: <i>Client project at Dataphilabs</i>,
+      description: [
+        <p>
+          Majorly involved in critical features of HSG's back office UI
+        </p>,
+        <p>
+          Features involve, platform entity onboarding & platform entity interactions.
+        </p>,
+        <p>
+          Majorly involved in shipping the project off, & providing developer support to client.
+        </p>
+      ],
+      timeline: null
+    },
+    {
+      title: <h3>AskVaidyo - Second Opinion Platform</h3>,
+      subTitle: <i>Client project at Dataphilabs</i>,
+      description: [
+        <p>
+          Primarily involved in the last 20% of the project. This project had 2 mobile apps & 4 web apps.
+        </p>,
+        <p>
+          Performed many bug fixes, many workflow fixes, a lot of code cleaning, at several instances implementation of good practices in multiple aspects of the project.
+        </p>
+      ],
+      timeline: null
+    },
+    {
+      title: <h3>LeaderAmp - Leadership Coaching Platform</h3>,
+      subTitle: <i>Client project at Dataphilabs</i>,
+      description: [
+        <p>
+          Major contribution in the Design & Development of LeaderAmp's app flow creation tool. This tool is used by the admin to pre-configure the flow of LeaderAmp's mobile application, from the web UI.
+        </p>,
+        <p>
+          Minorly involved in minor tweaks and bug fixes of the LeaderAmp Mobile application.
+        </p>
+      ],
+      timeline: null
+    },
     {
       title: <h3>Automated Attendance System using Face Based Biometrics</h3>,
       subTitle: <i>Final year project</i>,
@@ -261,14 +303,13 @@ const profile = {
   technicalSkills: [
     {
       title: <h3>Languages and frameworks:</h3>,
-      subTitle: <p>ES6, React/React-Native, Redux/Redux-Saga</p>
+      subTitle: <p> Javascript (ES6), React/React-Native, Redux/Redux-Saga</p>
     },
     {
       title: <h3>Other Interests:</h3>,
       subTitle: (
         <p>
-          C/C++, PHP, Java, SQL, Shell Scripting, Networking, Matlab, LATEX,
-          Clojure
+          Functional Programming (specially with JS), LATEX, Clojure
         </p>
       )
     }
@@ -294,10 +335,10 @@ const hobbies = "Hobbies";
 
 const sectionMap = {
   workExperience,
-  education,
   projects,
-  associations,
   technicalSkills,
+  education,
+  associations,
   hobbies
 };
 
@@ -314,7 +355,7 @@ const ImageMap = {
 
 const sections = {
   sectionMap,
-  ImageMap
+  ImageMap,
 };
 
 export { styles, profile, randomNumGenerator, sections };
