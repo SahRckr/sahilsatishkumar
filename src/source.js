@@ -4,25 +4,34 @@ import { Images } from "./assets";
 
 const randomNumGenerator = () => Math.ceil(Math.random() * 1000000000);
 
-const universalStyles = {
+const universalStyles = (width = window.innerWidth) => width < 768 ? ({
+  padding: "15px",
+  margin: "25px 10px 0px 10px"
+}) : ({
   padding: "25px",
   margin: "25px"
-};
+})
+
+const getButtonGroupProp = (width = window.innerWidth) => width < 768 ? ({
+  vertical: true,
+}) : ({
+  compact: true
+})
 
 const styles = {
   body: {
     backgroundColor: "white" || "whitesmoke",
     width: "100",
     height: "100",
-    ...universalStyles
+    ...universalStyles()
   },
   borderedBox: {
     border: "3px groove black",
-    ...universalStyles
+    ...universalStyles()
   },
   dottedBorderedBox: {
     border: "2px dotted black",
-    ...universalStyles
+    ...universalStyles()
   }
 };
 
@@ -44,7 +53,7 @@ const profile = {
     {
       type: (
         <p>
-          <Icon name="mail square" />SMS
+          <Icon name="comment" />SMS
         </p>
       ),
       detail: (
@@ -56,7 +65,7 @@ const profile = {
     {
       type: (
         <p>
-          <Icon name="mail outline" />E-mail
+          <Icon name="envelope" />E-mail
         </p>
       ),
       detail: (
@@ -72,7 +81,7 @@ const profile = {
         </p>
       ),
       detail: (
-        <Button.Group>
+        <Button.Group {...getButtonGroupProp()}>
           <Button
             color="blue"
             href="https://www.linkedin.com/in/sahrckr"
