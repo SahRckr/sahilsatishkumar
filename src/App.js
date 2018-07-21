@@ -38,7 +38,7 @@ class App extends Component {
       >
         <Header image={sections.ImageMap.contactMe} content="Connect with me" />
         <Modal.Content>
-          <Table>
+          <Table stackable>
             <Table.Header />
             <Table.Body>
               {contactInformation.map(contact => (
