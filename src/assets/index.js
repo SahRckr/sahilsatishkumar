@@ -2,6 +2,9 @@ const aloysius = require('./Images/aloysius.png')
 const vtu = require('./Images/vtu.jpg')
 const printwithpi_bw = require('./Images/printwithpi_bw.png')
 const dataphi = require('./Images/dataphi.png')
+const HealthSetGo = require('./Images/HealthSetGo.png')
+const AskVaidyo = require('./Images/AskVaidyo.jpg')
+const LeaderAmp = require('./Images/LeaderAmp.png')
 
 const workExperience = require('./Images/workExperience.svg')
 const education = require('./Images/education2.svg')
@@ -24,7 +27,10 @@ const Images = {
     technicalSkills,
     hobbies,
     profile,
-    contactMe
+    contactMe,
+    HealthSetGo,
+    LeaderAmp,
+    AskVaidyo
 }
 
 export {

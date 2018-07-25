@@ -99,8 +99,8 @@ class App extends Component {
                       size={"tiny"}
                     />
                   )}
-                  {sectionItem.location}
-                  {sectionItem.timeline}
+                  <div className="custom_center">{sectionItem.location}</div><br/>
+                  <div className="custom_center">{sectionItem.timeline}</div>
                 </Table.Cell>
               </Table.Row>
             ))}

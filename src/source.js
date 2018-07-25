@@ -1,5 +1,5 @@
 import React from "react";
-import { Icon, Button, Flag } from "semantic-ui-react";
+import { Icon, Button, Flag, Image, Segment } from "semantic-ui-react";
 import { Images } from "./assets";
 
 const randomNumGenerator = () => Math.ceil(Math.random() * 1000000000);
@@ -223,7 +223,11 @@ const profile = {
           Majorly involved in shipping the project off, & providing developer support to client.
         </p>
       ],
-      timeline: null
+      timeline: (
+        <Segment inverted compact>
+          <Image src={Images.HealthSetGo} size='tiny'/>
+        </Segment>
+      )
     },
     {
       title: <h3>AskVaidyo - Second Opinion Platform</h3>,
@@ -236,7 +240,11 @@ const profile = {
           Performed many bug fixes, many workflow fixes, a lot of code cleaning, at several instances implementation of good practices in multiple aspects of the project.
         </p>
       ],
-      timeline: null
+      timeline: (
+        <Segment compact>
+          <Image src={Images.AskVaidyo} size='tiny'/>
+        </Segment>
+      )
     },
     {
       title: <h3>LeaderAmp - Leadership Coaching Platform</h3>,
@@ -249,7 +257,11 @@ const profile = {
           Minorly involved in minor tweaks and bug fixes of the LeaderAmp Mobile application.
         </p>
       ],
-      timeline: null
+      timeline: (
+        <Segment compact>
+          <Image src={Images.LeaderAmp} size='tiny'/>
+        </Segment>
+      )
     },
     {
       title: <h3>Automated Attendance System using Face Based Biometrics</h3>,
