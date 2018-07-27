@@ -62,9 +62,10 @@ class App extends Component {
       />
       <Header.Content>{name}</Header.Content>
       <Label
-        circular
-        color={"red"}
-        empty
+        as='a'
+        color={"black"}
+        attached={"bottom right"}
+        content={"CONTACT"}
         onClick={() => this.showModal(true)}
       />
     </Header>
