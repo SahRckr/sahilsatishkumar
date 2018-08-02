@@ -1,5 +1,6 @@
 import React from "react";
 import { Icon, Button, Flag, Image, Segment } from "semantic-ui-react";
+import ReactGA from 'react-ga';
 import { Images } from "./assets";
 
 const randomNumGenerator = () => Math.ceil(Math.random() * 1000000000);
@@ -17,6 +18,14 @@ const getButtonGroupProp = (width = window.innerWidth) => width < 768 ? ({
 }) : ({
   compact: true
 })
+
+const updateContactGoogleTracker = (action) => {
+  if(Boolean(action))
+    ReactGA.event({
+      category: 'contactMethodPress',
+      action
+    })
+}
 
 const styles = {
   body: {
@@ -45,7 +54,7 @@ const profile = {
         </p>
       ),
       detail: (
-        <a href="tel:+919449513893">
+        <a href="tel:+919449513893" onClick={() => updateContactGoogleTracker('phone')}>
           <Flag name="in" />+91-944-951-3893
         </a>
       )
@@ -57,7 +66,7 @@ const profile = {
         </p>
       ),
       detail: (
-        <a href="sms:+919449513893">
+        <a href="sms:+919449513893" onClick={() => updateContactGoogleTracker('sms')}>
           <Flag name="in" />+91-944-951-3893
         </a>
       )
@@ -69,7 +78,7 @@ const profile = {
         </p>
       ),
       detail: (
-        <a href="mailto:sahilsatishkumar@gmail.com">
+        <a href="mailto:sahilsatishkumar@gmail.com" onClick={() => updateContactGoogleTracker('email')}>
           sahilsatishkumar [at] gmail [dot] com
         </a>
       )
@@ -87,6 +96,7 @@ const profile = {
             href="https://www.linkedin.com/in/sahrckr"
             target="_blank"
             rel="noopener noreferrer"
+            onClick={() => updateContactGoogleTracker('linkedIn')}
           >
             LinkedIn
           </Button>
@@ -95,6 +105,7 @@ const profile = {
             href="https://twitter.com/sahrckr"
             target="_blank"
             rel="noopener noreferrer"
+            onClick={() => updateContactGoogleTracker('twitter')}
           >
             Twitter
           </Button>
@@ -103,6 +114,7 @@ const profile = {
             href="https://www.quora.com/profile/Sahil-Satishkumar"
             target="_blank"
             rel="noopener noreferrer"
+            onClick={() => updateContactGoogleTracker('quora')}
           >
             Quora
           </Button>
@@ -111,6 +123,7 @@ const profile = {
             href="https://api.whatsapp.com/send?phone=919449513893"
             target="_blank"
             rel="noopener noreferrer"
+            onClick={() => updateContactGoogleTracker('whatsapp')}
           >
             WhatsApp
           </Button>
@@ -119,6 +132,7 @@ const profile = {
             href="https://github.com/SahRckr"
             target="_blank"
             rel="noopener noreferrer"
+            onClick={() => updateContactGoogleTracker('github')}
           >
             GitHub
           </Button>
@@ -127,6 +141,7 @@ const profile = {
             href="https://fb.me/sahrckr"
             target="_blank"
             rel="noopener noreferrer"
+            onClick={() => updateContactGoogleTracker('facebook')}
           >
             Facebook
           </Button>

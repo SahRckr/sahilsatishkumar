@@ -7,6 +7,7 @@ import {
   Image,
   Modal
 } from "semantic-ui-react";
+import ReactGA from 'react-ga';
 
 import { 
   styles,
@@ -16,15 +17,26 @@ import {
 } from "./source";
 
 import "semantic-ui-css/semantic.css";
+
 class App extends Component {
   constructor(props) {
     super(props);
     this.state = {
       showContactModal: false
     };
+    ReactGA.initialize('UA-123273288-1');
+    ReactGA.pageview('homepage');
   }
 
-  showModal = val => this.setState({ showContactModal: Boolean(val) });
+  showModal = val => {
+    this.setState({ showContactModal: Boolean(val) });
+    if(val) {
+      ReactGA.event({
+        category: 'eventTrack',
+        action: 'Opened Contact Modal',
+      });
+    }
+  }
 
   getCompleteProfile = (show, contactInformation) => {
     return (
