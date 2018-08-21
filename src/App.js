@@ -9,11 +9,11 @@ import {
 } from "semantic-ui-react";
 import ReactGA from 'react-ga';
 
-import { 
+import {
   styles,
   profile,
   randomNumGenerator,
-  sections 
+  sections
 } from "./source";
 
 import "semantic-ui-css/semantic.css";
@@ -100,9 +100,9 @@ class App extends Component {
                 <Table.Cell width={12}>
                   {sectionItem.title}
                   {sectionItem.subTitle}
-                  {Array.isArray(sectionItem.description) &&
-                    sectionItem.description.length &&
-                    this.getSubsectionGenerator(sectionItem.description)}
+                  {(Array.isArray(sectionItem.description) &&
+                    sectionItem.description.length) ?
+                    this.getSubsectionGenerator(sectionItem.description) : null}
                 </Table.Cell>
                 <Table.Cell textAlign="center" verticalAlign="middle">
                   {sectionItem.logo && (
