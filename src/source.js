@@ -153,6 +153,21 @@ const profile = {
     {
       title: (
         <p>
+          <i>Software Engineer</i> at <b>HyperTrack</b>
+        </p>
+      ),
+      description: [],
+      timeline: (
+        <p>
+          <i>Aug. 2018 - Present</i>
+        </p>
+      ),
+      location: <p>Bangalore, IN</p>,
+      logo: Images.hypertrack
+    },
+    {
+      title: (
+        <p>
           <i>Full Stack JavaScript Developer</i> at <b>Dataphi Labs</b>
         </p>
       ),
@@ -172,7 +187,7 @@ const profile = {
         </p>
       ),
       location: <p>Bangalore, IN</p>,
-      logo: Images.dataphi
+      logo: Images.dataphi_bw
     },
     {
       title: (
