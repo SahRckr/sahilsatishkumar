@@ -110,6 +110,15 @@ const profile = {
                         Facebook
                     </Button>
                     <Button
+                        color="blue"
+                        href="http://telegram.me/sahrckr"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        onClick={() => updateContactGoogleTracker('telegram')}
+                    >
+                        Telegram
+                    </Button>
+                    <Button
                         color="linkedin"
                         href="https://www.linkedin.com/in/sahrckr"
                         target="_blank"
@@ -126,15 +135,6 @@ const profile = {
                         onClick={() => updateContactGoogleTracker('twitter')}
                     >
                         Twitter
-                    </Button>
-                    <Button
-                        color="blue"
-                        href="http://telegram.me/sahrckr"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        onClick={() => updateContactGoogleTracker('telegram')}
-                    >
-                        Telegram
                     </Button>
                     <Button
                         color="green"
