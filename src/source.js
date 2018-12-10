@@ -92,32 +92,50 @@ const profile = {
             detail: (
                 <Button.Group {...getButtonGroupProp()}>
                     <Button
-                        color="blue"
+                        color="black"
+                        href="https://github.com/SahRckr"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        onClick={() => updateContactGoogleTracker('github')}
+                    >
+                        GitHub
+                    </Button>
+                    <Button
+                        color="facebook"
+                        href="https://fb.me/sahrckr"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        onClick={() => updateContactGoogleTracker('facebook')}
+                    >
+                        Facebook
+                    </Button>
+                    <Button
+                        color="linkedin"
                         href="https://www.linkedin.com/in/sahrckr"
                         target="_blank"
                         rel="noopener noreferrer"
                         onClick={() => updateContactGoogleTracker('linkedIn')}
                     >
                         LinkedIn
-          </Button>
+                    </Button>
                     <Button
-                        color="teal"
+                        color="twitter"
                         href="https://twitter.com/sahrckr"
                         target="_blank"
                         rel="noopener noreferrer"
                         onClick={() => updateContactGoogleTracker('twitter')}
                     >
                         Twitter
-          </Button>
+                    </Button>
                     <Button
-                        color="red"
-                        href="https://www.quora.com/profile/Sahil-Satishkumar"
+                        color="blue"
+                        href="http://telegram.me/sahrckr"
                         target="_blank"
                         rel="noopener noreferrer"
-                        onClick={() => updateContactGoogleTracker('quora')}
+                        onClick={() => updateContactGoogleTracker('telegram')}
                     >
-                        Quora
-          </Button>
+                        Telegram
+                    </Button>
                     <Button
                         color="green"
                         href="https://api.whatsapp.com/send?phone=919449513893"
@@ -126,25 +144,7 @@ const profile = {
                         onClick={() => updateContactGoogleTracker('whatsapp')}
                     >
                         WhatsApp
-          </Button>
-                    <Button
-                        color="black"
-                        href="https://github.com/SahRckr"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        onClick={() => updateContactGoogleTracker('github')}
-                    >
-                        GitHub
-          </Button>
-                    <Button
-                        color="blue"
-                        href="https://fb.me/sahrckr"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        onClick={() => updateContactGoogleTracker('facebook')}
-                    >
-                        Facebook
-          </Button>
+                    </Button>
                 </Button.Group>
             )
         }
@@ -175,11 +175,11 @@ const profile = {
                 <p>
                     <b>Web Applications:</b> Engineered UI elements using React.js and
                     Redux.js for client projects.
-        </p>,
+                </p>,
                 <p>
                     <b>Mobile Applications:</b> Built configurable applications using
                     React-Native.
-        </p>
+                </p>
             ],
             timeline: (
                 <p>
@@ -199,11 +199,11 @@ const profile = {
                 <p>
                     <b>Web Applications:</b> Worked on Poster Catalogue, Internal admin
                     dashboard using React.js and Redux.
-        </p>,
+                </p>,
                 <p>
                     <b>Learnings:</b> Learnt and implemented ES6 and javascript
                     frameworks.
-        </p>
+                </p>
             ],
             timeline: (
                 <p>
@@ -245,13 +245,13 @@ const profile = {
             description: [
                 <p>
                     Majorly involved in critical features of HSG's back office UI
-        </p>,
+                </p>,
                 <p>
                     Features involve, platform entity onboarding & platform entity interactions.
-        </p>,
+                </p>,
                 <p>
                     Majorly involved in shipping the project off, & providing developer support to client.
-        </p>
+                </p>
             ],
             timeline: (
                 <Segment inverted compact>
@@ -265,10 +265,10 @@ const profile = {
             description: [
                 <p>
                     Primarily involved in the last 20% of the project. This project had 2 mobile apps & 4 web apps.
-        </p>,
+                </p>,
                 <p>
                     Performed many bug fixes, many workflow fixes, a lot of code cleaning, at several instances implementation of good practices in multiple aspects of the project.
-        </p>
+                </p>
             ],
             timeline: (
                 <Segment compact>
@@ -282,10 +282,10 @@ const profile = {
             description: [
                 <p>
                     Major contribution in the Design & Development of LeaderAmp's app flow creation tool. This tool is used by the admin to pre-configure the flow of LeaderAmp's mobile application, from the web UI.
-        </p>,
+                </p>,
                 <p>
                     Minorly involved in minor tweaks and bug fixes of the LeaderAmp Mobile application.
-        </p>
+                </p>
             ],
             timeline: (
                 <Segment compact>
@@ -299,10 +299,10 @@ const profile = {
             description: [
                 <p>
                     <b>Code base:</b> Developed on MATLAB.
-        </p>,
+                </p>,
                 <p>
                     <b>Documentation:</b> Documented on LATEX.
-        </p>
+                </p>
             ],
             timeline: (
                 <p>
@@ -317,7 +317,7 @@ const profile = {
                 <p>
                     <b>Abstract:</b> Developed the game of Draughts using existing
                     algorithm.
-        </p>
+                </p>
             ],
             timeline: (
                 <p>
@@ -356,7 +356,8 @@ const profile = {
             subTitle: <i>Or anything related to Software Engineering career ?</i>,
             description: [
                 <p> 1:1 or group sessions over the weekend or holiday or at your space or remotely.</p>,
-                <p> General mentorship for freshers & students </p>
+                <p> General mentorship for freshers & students </p>,
+                <p> Feel free to contact me regarding the same. </p>
             ],
             timeline: null
         }
