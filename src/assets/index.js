@@ -17,22 +17,22 @@ const profile = require("./Images/header.svg");
 const contactMe = require("./Images/contactMe.svg");
 
 const Images = {
-  aloysius,
-  vtu,
-  printwithpi_bw,
-  dataphi_bw,
-  hypertrack,
-  workExperience,
-  education,
-  projects,
-  associations,
-  technicalSkills,
-  hobbies,
-  profile,
-  contactMe,
-  HealthSetGo,
-  LeaderAmp,
-  AskVaidyo
+	aloysius,
+	vtu,
+	printwithpi_bw,
+	dataphi_bw,
+	hypertrack,
+	workExperience,
+	education,
+	projects,
+	associations,
+	technicalSkills,
+	hobbies,
+	profile,
+	contactMe,
+	HealthSetGo,
+	LeaderAmp,
+	AskVaidyo
 };
 
 export { Images };
