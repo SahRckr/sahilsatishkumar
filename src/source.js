@@ -396,12 +396,12 @@ const profile = {
 	technicalSkills: [
 		{
 			title: <h3>Languages and frameworks:</h3>,
-			subTitle: <p> Javascript (ES6), React/React-Native, Redux/Redux-Saga</p>
+			subTitle: <p> Javascript (ES6), React/React-Native, Redux/Redux-Saga, GraphQL/Apollo-GraphQL</p>
 		},
 		{
 			title: <h3>Other Interests:</h3>,
 			subTitle: (
-				<p>Functional Programming (specially with JS), LATEX, Clojure</p>
+				<p>AWS Amplify/AppSync, Functional Programming (specially with JS), LATEX, Clojure</p>
 			)
 		}
 	],
