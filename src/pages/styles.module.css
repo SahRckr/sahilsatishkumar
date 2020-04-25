@@ -1,36 +1,42 @@
-/* stylelint-disable docusaurus/copyright-header */
-/**
- * CSS files with the .module.css suffix will be treated as CSS modules
- * and scoped locally.
- */
-
-.heroBanner {
-  padding: 4rem 0;
-  text-align: center;
-  position: relative;
-  overflow: hidden;
+.mainContainer {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 }
 
-@media screen and (max-width: 966px) {
-  .heroBanner {
-    padding: 2rem;
-  }
+.sectionGroup {
+	min-width: var(--ifm-container-width);
+	margin: 1rem;
+	transition: 0.4s all ease-in-out;
+	background-color: white;
+	border: 10px outset transparent;
 }
 
-.buttons {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+.sectionGroup:hover {
+	border: 10px outset var(--ifm-color-primary-lightest);
 }
 
-.features {
-  display: flex;
-  align-items: center;
-  padding: 2rem 0;
-  width: 100%;
+.sectionHeader {
+	margin: 1rem;
 }
 
-.featureImage {
-  height: 200px;
-  width: 200px;
+.sectionContent {
+	margin: 1rem;
+}
+
+.listSection {
+	list-style: none;
+	padding-left: unset;
+}
+
+.listContainer {
+}
+
+.listContainer p {
+	margin: unset;
+}
+
+.listContainer i {
+	float: right;
 }
