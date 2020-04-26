@@ -4,8 +4,8 @@ module.exports = {
 	url: "https://sahilsatishkumar.dev",
 	baseUrl: "/",
 	favicon: "/img/header.ico",
-	organizationName: "facebook", // Usually your GitHub org/user name.
-	projectName: "docusaurus", // Usually your repo name.
+	organizationName: "sahilsatishkumar", // Usually your GitHub org/user name.
+	projectName: "profile", // Usually your repo name.
 	themeConfig: {
 		disableDarkMode: true,
 		navbar: {
@@ -50,8 +50,6 @@ module.exports = {
 			{
 				docs: {
 					sidebarPath: require.resolve("./sidebars.js"),
-					editUrl:
-						"https://github.com/facebook/docusaurus/edit/master/website/",
 				},
 				theme: {
 					customCss: require.resolve("./src/css/custom.css"),
