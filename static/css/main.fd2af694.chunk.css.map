@@ -1,1 +1,0 @@
-{"version":3,"sources":["index.css"],"names":[],"mappings":"AAAA,eACC,oBAAqB,CACrB,qBAAsB,CACtB,iBACD","file":"main.fd2af694.chunk.css","sourcesContent":[".custom_center {\n\tdisplay: inline-block;\n\tvertical-align: middle;\n\ttext-align: center;\n}\n"]}
