@@ -13,9 +13,9 @@ Welcome to this blog.
 
 This is not a test post.
 
-I recently made this transitioned my website from being a static site to something more. I wanted a place where I could log my thoughts, books that I'm reading (doing a lot lately) and code I want to share openly.
+I recently made this transition to my website from being a static site to something more. I wanted a place where I could log my thoughts, talk about books that I'm reading (been reading a lot lately) and code I want to share openly.
 
-There are a lot of changes I really love about this setup. Firstly I got to hack in an off-the-shelf [tool](https://docusaurus.io/) to build it (doing that for the second time). Secondly, I am really thrilled to get my own [books page](/books). Goodreads as a social media is cool, but then there aren't a lot of people using it. This blog will also give me a way to share my on views on some of the books I really enjoyed reading them.
+There are a lot of changes I really love about this setup. Firstly, I got to hack an off-the-shelf [tool](https://docusaurus.io/) to build it (doing that for the second time). Secondly, I am really thrilled to get my own [books page](/books). Goodreads as a social media is cool, but then there aren't a lot of people using it. This blog will also give me a way to share my on views on some of the books I really enjoyed reading them.
 
 Lastly docusaurus is great for sharing programming experiences too. 🙂
 
