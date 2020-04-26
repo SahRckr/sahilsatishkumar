@@ -3,7 +3,7 @@ module.exports = {
 	tagline: "Software Engineering, and other things",
 	url: "https://sahilsatishkumar.dev",
 	baseUrl: "/",
-	favicon: "img/favicon.svg",
+	favicon: "/img/header.ico",
 	organizationName: "facebook", // Usually your GitHub org/user name.
 	projectName: "docusaurus", // Usually your repo name.
 	themeConfig: {
@@ -12,7 +12,7 @@ module.exports = {
 			title: "Hi, I'm Sahil",
 			logo: {
 				alt: "header-image",
-				src: "img/favicon.svg",
+				src: "/img/favicon.svg",
 			},
 			links: [
 				{ to: "blog", label: "Blog", position: "right" },
