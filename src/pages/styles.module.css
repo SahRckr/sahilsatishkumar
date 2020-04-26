@@ -1,0 +1,50 @@
+@media (max-width: 768px) {
+	.listContainer {
+		display: flex;
+		flex-direction: column;
+		justify-content: flex-start;
+	}
+}
+
+.mainContainer {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.sectionGroup {
+	width: 100%;
+	padding: 1rem;
+	transition: 0.4s all ease-in-out;
+	background-color: white;
+	border: 10px outset transparent;
+}
+
+.sectionGroup:hover {
+	border: 10px outset var(--ifm-color-primary-lightest);
+}
+
+.sectionHeader {
+	margin: 1rem;
+}
+
+.sectionContent {
+	margin: 1rem;
+}
+
+.listSection {
+	list-style: none;
+	padding-left: unset;
+}
+
+.listContainer {
+}
+
+.listContainer p {
+	margin: unset;
+}
+
+.listContainer i {
+	float: right;
+}
