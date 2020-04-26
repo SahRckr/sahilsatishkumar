@@ -7,6 +7,10 @@ module.exports = {
 	organizationName: "sahilsatishkumar", // Usually your GitHub org/user name.
 	projectName: "profile", // Usually your repo name.
 	themeConfig: {
+		googleAnalytics: {
+			trackingID: "UA-141789564-1",
+			anonymizeIP: false,
+		},
 		disableDarkMode: true,
 		navbar: {
 			title: "Hi, I'm Sahil",
@@ -57,4 +61,5 @@ module.exports = {
 			},
 		],
 	],
+	plugins: ["@docusaurus/plugin-google-analytics"],
 };
