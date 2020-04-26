@@ -3,12 +3,20 @@
 }
 
 .gr_grid_book_container {
-	/* customize book cover container div here */
 	float: left;
 	width: 98px;
 	height: 160px;
-	padding-right: 20px;
 	overflow: hidden;
+	border: 5px solid transparent;
+	display: flex;
+	align-items: center;
+	text-align: center;
+	padding: 5px;
+	transition: 0.4s all ease-in-out;
+}
+
+.gr_grid_book_container:hover {
+	padding: 0px;
 }
 
 .bookshelf {
