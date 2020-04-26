@@ -2,8 +2,8 @@ import React from "react";
 import classnames from "classnames";
 import Layout from "@theme/Layout";
 import Link from "@docusaurus/Link";
-import useDocusaurusContext from "@docusaurus/useDocusaurusContext";
-import useBaseUrl from "@docusaurus/useBaseUrl";
+// import useDocusaurusContext from "@docusaurus/useDocusaurusContext";
+// import useBaseUrl from "@docusaurus/useBaseUrl";
 import styles from "./styles.module.css";
 
 const sections = [
@@ -97,8 +97,8 @@ function Section(props) {
 }
 
 function Home() {
-	const context = useDocusaurusContext();
-	const { siteConfig = {} } = context;
+	// const context = useDocusaurusContext();
+	// const { siteConfig = {} } = context;
 	return (
 		<Layout>
 			<main className={styles.mainContainer}>
