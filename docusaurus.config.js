@@ -22,25 +22,25 @@ module.exports = {
 		},
 		footer: {
 			style: "light",
-			links: [
-				{
-					title: "",
-					items: [
-						{
-							label: "Blog",
-							to: "blog",
-						},
-						{
-							label: "GitHub",
-							href: "https://github.com/sahrckr",
-						},
-						{
-							label: "Twitter",
-							href: "https://twitter.com/@sahrkcr",
-						},
-					],
-				},
-			],
+			// links: [
+			// 	{
+			// 		title: "",
+			// 		items: [
+			// 			{
+			// 				label: "Blog",
+			// 				to: "blog",
+			// 			},
+			// 			{
+			// 				label: "GitHub",
+			// 				href: "https://github.com/sahrckr",
+			// 			},
+			// 			{
+			// 				label: "Twitter",
+			// 				href: "https://twitter.com/@sahrkcr",
+			// 			},
+			// 		],
+			// 	},
+			// ],
 			copyright: `May the source be with you`,
 		},
 	},
