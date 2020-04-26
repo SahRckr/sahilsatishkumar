@@ -76,8 +76,8 @@ function ListSectionComponent({ items }) {
 	return (
 		<ul className={styles.listSection}>
 			{items.map((item) => (
-				<li>
-					<ListItemComponent key={item.mainText} {...item} />
+				<li key={item.mainText}>
+					<ListItemComponent {...item} />
 				</li>
 			))}
 		</ul>
