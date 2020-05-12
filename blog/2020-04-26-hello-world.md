@@ -33,5 +33,6 @@ I do not have a Long Term plan as of now. Personally, I am dealing with a lot of
 - [ ] Fix landing page, get a roadmap for the same
 - [ ] Figure out a way to add comments to posts
 - [ ] Plan next 3 posts (2 technical, 1 book review maybe?)
+- [ ] Add github action to deploy on push to master
 
 Ciao 👋
