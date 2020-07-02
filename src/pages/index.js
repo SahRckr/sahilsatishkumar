@@ -13,7 +13,7 @@ const sections = [
 		items: [
 			{
 				mainText: "Software Engineer",
-				duration: "August. 2018 - Present",
+				duration: "August. 2018 - May. 2020",
 				subText: "Hypertrack Technologies Private Limited",
 			},
 			{
