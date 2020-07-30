@@ -21,41 +21,22 @@ const contacts = [
 		text: "sahilsatishkumar [at] gmail [dot] com",
 		href: "mailto:sahilsatishkumar@gmail.com",
 	},
-
 	{
 		href: "https://github.com/SahRckr",
-		text: "click me",
+		text: "@sahrckr",
 		type: "GitHub",
 	},
 
 	{
-		href: "https://fb.me/sahrckr",
-		text: "click me",
-		type: "Facebook",
-	},
-
-	{
-		href: "http://telegram.me/sahrckr",
-		text: "click me",
-		type: "Telegram",
-	},
-
-	{
 		href: "https://www.linkedin.com/in/sahrckr",
-		text: "click me",
+		text: "linkedin.com/in/sahrckr",
 		type: "LinkedIn",
 	},
 
 	{
 		href: "https://twitter.com/sahrckr",
-		text: "click me",
+		text: "@sahrckr",
 		type: "Twitter",
-	},
-
-	{
-		href: "https://api.whatsapp.com/send?phone=919449513893",
-		text: "click me",
-		type: "WhatsApp",
 	},
 ];
 
