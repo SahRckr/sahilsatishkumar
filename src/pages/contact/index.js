@@ -7,24 +7,9 @@ import styles from "./contact.module.css";
 
 const contacts = [
 	{
-		type: "Phone",
-		text: "+91-944-951-3893",
-		href: "tel:+919449513893",
-	},
-	{
-		type: "SMS",
-		text: "+91-944-951-3893",
-		href: "sms:+919449513893",
-	},
-	{
 		type: "E-mail",
 		text: "sahilsatishkumar [at] gmail [dot] com",
 		href: "mailto:sahilsatishkumar@gmail.com",
-	},
-	{
-		href: "https://github.com/SahRckr",
-		text: "@sahrckr",
-		type: "GitHub",
 	},
 
 	{
@@ -38,20 +23,31 @@ const contacts = [
 		text: "@sahrckr",
 		type: "Twitter",
 	},
+
+	{
+		href: "https://github.com/SahRckr",
+		text: "@sahrckr",
+		type: "GitHub",
+	},
 ];
 
 const Contact = () => (
 	<Layout>
-		<Head></Head>
+		<Head />
 		<div className={styles.contactContainer}>
 			<h2>📣 Connect with me:</h2>
 			<div>
 				<table>
-					<thead />
+					<thead>
+						<tr>
+							{contacts.map((contact) => (
+								<th key={contact.type}>{contact.type}</th>
+							))}
+						</tr>
+					</thead>
 					<tbody>
-						{contacts.map((contact) => (
-							<tr key={contact.type}>
-								<td>{contact.type}</td>
+						<tr>
+							{contacts.map((contact) => (
 								<td>
 									<a
 										href={contact.href}
@@ -61,8 +57,8 @@ const Contact = () => (
 										{contact.text}
 									</a>
 								</td>
-							</tr>
-						))}
+							))}
+						</tr>
 					</tbody>
 				</table>
 			</div>
