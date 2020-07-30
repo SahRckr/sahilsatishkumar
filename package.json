@@ -6,7 +6,8 @@
 		"start": "docusaurus start",
 		"build": "docusaurus build",
 		"swizzle": "docusaurus swizzle",
-		"deploy": "gh-pages -d build"
+		"deploy": "gh-pages -d build",
+		"send": "docusaurus build && cp CNAME build/CNAME && gh-pages -d build"
 	},
 	"dependencies": {
 		"@docusaurus/core": "^2.0.0-alpha.50",
