@@ -18,6 +18,10 @@
 	--ifm-color-primary-lightest: #7aa6cb;
 	--ifm-code-font-size: 95%;
 	--ifm-font-family-base: "Work Sans", sans-serif;
+
+	--background-color: #f0f8ff;
+	--ifm-navbar-background-color: #b0c4de;
+	--ifm-footer-background-color: #b0c4de;
 }
 
 .docusaurus-highlight-code-line {
