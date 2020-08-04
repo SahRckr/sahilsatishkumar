@@ -2,6 +2,7 @@ import React from "react";
 
 import Layout from "@theme/Layout";
 import Head from "@docusaurus/Head";
+import ExecutionEnvironment from "@docusaurus/ExecutionEnvironment";
 
 import styles from "./contact.module.css";
 
@@ -37,17 +38,17 @@ function fixElements() {
 	targetClass.onclick = embedClass.onclick;
 }
 
-window.initBadge = function () {
-	window.Calendly.initBadgeWidget({
-		url: "https://calendly.com/sahrckr/15min",
-		text: "Schedule time with me",
-		color: "#00a2ff",
-		textColor: "#ffffff",
-		branding: true,
-	});
-
-	window.setTimeout(fixElements, 1000);
-};
+if (ExecutionEnvironment.canUseDOM)
+	window.initBadge = function () {
+		window.Calendly.initBadgeWidget({
+			url: "https://calendly.com/sahrckr/15min",
+			text: "Schedule time with me",
+			color: "#00a2ff",
+			textColor: "#ffffff",
+			branding: true,
+		});
+		window.setTimeout(fixElements, 1000);
+	};
 
 const Contact = () => {
 	return (
