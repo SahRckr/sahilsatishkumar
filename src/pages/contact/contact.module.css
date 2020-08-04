@@ -11,12 +11,7 @@ table {
 	text-align: center;
 }
 
-.hideButton {
-	display: none !important;
-}
-
 .calendlyWidget {
-	role: button;
 	padding: 1rem;
 	border-radius: 0.5rem;
 	background-color: var(--ifm-navbar-background-color);

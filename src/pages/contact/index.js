@@ -35,7 +35,6 @@ function fixElements() {
 	const embedClass = document.querySelector(".calendly-badge-content");
 	const targetClass = document.querySelector("#calendly-widget");
 	targetClass.onclick = embedClass.onclick;
-	// embedClass.classList.add(styles.hideButton);
 }
 
 window.initBadge = function () {
