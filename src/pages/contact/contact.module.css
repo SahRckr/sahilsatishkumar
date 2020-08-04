@@ -10,3 +10,21 @@
 table {
 	text-align: center;
 }
+
+.calendlyWidget {
+	padding: 1rem;
+	border-radius: 0.5rem;
+	background-color: var(--ifm-navbar-background-color);
+	color: white;
+	cursor: pointer;
+	transition: 0.4s all ease-in-out;
+}
+
+.calendlyWidget:hover,
+.calendlyWidget:focus {
+	background-color: var(--ifm-color-primary-lightest);
+}
+
+:global(.calendly-badge-widget) {
+	opacity: 0;
+}
