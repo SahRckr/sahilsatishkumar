@@ -19,10 +19,10 @@ function BlogPostPage(props) {
 		const script = document.createElement("script");
 
 		script.src = "https://utteranc.es/client.js";
-		script.setAttribute("repo", "KohheePeace/coderhackers");
-		script.setAttribute("issue-term", "pathname");
-		script.setAttribute("label", "comment");
-		script.setAttribute("theme", "github-light");
+		script.setAttribute("repo", "sahrckr/profile");
+		script.setAttribute("issue-term", "url");
+		script.setAttribute("label", "blog-post-comment");
+		script.setAttribute("theme", "preferred-color-scheme");
 		script.crossOrigin = "anonymous";
 		script.async = true;
 
