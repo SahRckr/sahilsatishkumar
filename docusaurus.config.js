@@ -11,14 +11,20 @@ module.exports = {
 			trackingID: "UA-141789564-1",
 			anonymizeIP: false,
 		},
-		disableDarkMode: true,
+		colorMode: {
+			disableSwitch: true,
+		},
+		prism: {
+			defaultLanguage: "javascript",
+			theme: require("prism-react-renderer/themes/github"),
+		},
 		navbar: {
 			title: "Hi, I'm Sahil",
 			logo: {
 				alt: "header-image",
 				src: "/img/favicon.svg",
 			},
-			links: [
+			items: [
 				{ to: "hire-me", label: "Hire me ❗️", position: "right" },
 				{ to: "blog", label: "Blog", position: "right" },
 				{ to: "books", label: "Books", position: "right" },
