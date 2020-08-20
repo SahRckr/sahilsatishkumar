@@ -16,7 +16,9 @@ _(Chapter #71, Soft Skills)_
 </blockquote>
 
 <div style={{display: "flex", flexDirection: "column", alignItems: "center"}}>
-<a href="https://www.amazon.in/gp/product/B079WY7ZJK/ref=as_li_ss_il?ie=UTF8&linkCode=li3&tag=sahrckr07-21&linkId=fd638e65c93e9c0c646cea96f7b7e92b" target="_blank">Soft Skills: The Software Developer's Life Manual</a> <img border="0" width="240" src="//ws-in.amazon-adsystem.com/widgets/q?\_encoding=UTF8&ASIN=B079WY7ZJK&Format=\_SL250_&ID=AsinImage&MarketPlace=IN&ServiceVersion=20070822&WS=1&tag=sahrckr07-21" /><img src="https://ir-in.amazon-adsystem.com/e/ir?t=sahrckr07-21&l=li3&o=31&a=B079WY7ZJK" width="1" height="1" border="0" alt="" />
+<a href="https://www.amazon.in/gp/product/B079WY7ZJK/ref=as_li_ss_il?ie=UTF8&linkCode=li3&tag=sahrckr07-21&linkId=fd638e65c93e9c0c646cea96f7b7e92b" target="_blank">Soft Skills: The Software Developer's Life Manual</a>
+<img border="0" width="240" src="https://images.manning.com/360/480/resize/book/0/54e56db-260b-46a7-b15d-ad4dfa39a867/sonmez.png" />
+<img src="https://ir-in.amazon-adsystem.com/e/ir?t=sahrckr07-21&l=li3&o=31&a=B079WY7ZJK" width="1" height="1" border="0" alt="" />
 </div>
 
 <!--truncate-->
