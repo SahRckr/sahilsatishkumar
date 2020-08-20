@@ -11,6 +11,8 @@ I published my very first npm package: [`react-opentable (v2.0.0)`](https://www.
 
 This post intends to be a helper document for the same, and will be kept upto date, if the package ever changes. As of writing this post, v2.0.0 is the latest and stable version of the package. The source code is in a private repository right now, will be open sourced soon!
 
+<!--truncate-->
+
 `react-opentable` is a React wrapper for opentable's reservation widget.
 
 :::info
