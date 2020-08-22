@@ -8,7 +8,7 @@ module.exports = {
 	projectName: "profile", // Usually your repo name.
 	themeConfig: {
 		googleAnalytics: {
-			trackingID: "UA-141789564-1",
+			trackingID: "UA-176066372-1",
 			anonymizeIP: false,
 		},
 		colorMode: {
@@ -65,14 +65,6 @@ module.exports = {
 				theme: {
 					customCss: require.resolve("./src/css/custom.css"),
 				},
-			},
-		],
-	],
-	plugins: [
-		[
-			require.resolve("@docusaurus/plugin-google-analytics"),
-			{
-				id: "plugin-1",
 			},
 		],
 	],
