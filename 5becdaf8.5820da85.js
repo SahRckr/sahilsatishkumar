@@ -1,0 +1,1 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[8],{64:function(a){a.exports=JSON.parse('{"allTagsPath":"/blog/tags","slug":"opentable","name":"opentable","count":1,"permalink":"/blog/tags/opentable"}')}}]);
