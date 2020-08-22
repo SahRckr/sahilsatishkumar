@@ -19,7 +19,7 @@ function Home() {
 				<ul>
 					<li>
 						<Link to="/blog/2020/08/21/react-opentable">
-							🎉 Checkout <code>react-opentable</code> 🎉
+							🎉 <code>react-opentable</code> 🎉
 						</Link>
 					</li>
 					<li>
