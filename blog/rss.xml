@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0">
+    <channel>
+        <title>Sahil Satishkumar (@sahrckr) Blog</title>
+        <link>https://sahilsatishkumar.dev/blog</link>
+        <description>Sahil Satishkumar (@sahrckr) Blog</description>
+        <lastBuildDate>Fri, 21 Aug 2020 00:00:00 GMT</lastBuildDate>
+        <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
+        <generator>https://github.com/jpmonette/feed</generator>
+        <copyright>Copyright © 2020 Sahil Satishkumar</copyright>
+        <item>
+            <title><![CDATA[npm 📦 React OpenTable]]></title>
+            <link>https://sahilsatishkumar.dev/blog/2020/08/21/react-opentable</link>
+            <guid>npm 📦 React OpenTable</guid>
+            <pubDate>Fri, 21 Aug 2020 00:00:00 GMT</pubDate>
+            <description><![CDATA[React wrapper for Opentable Reservation Widget]]></description>
+        </item>
+        <item>
+            <title><![CDATA[Soft Skills]]></title>
+            <link>https://sahilsatishkumar.dev/blog/2020/08/16/Soft-skills</link>
+            <guid>Soft Skills</guid>
+            <pubDate>Sun, 16 Aug 2020 00:00:00 GMT</pubDate>
+            <description><![CDATA[...This book is really about me sharing my experience and the things that have made me successful so far in my life...]]></description>
+        </item>
+        <item>
+            <title><![CDATA[Hello World]]></title>
+            <link>https://sahilsatishkumar.dev/blog/hello-world</link>
+            <guid>hello-world</guid>
+            <pubDate>Sun, 26 Apr 2020 00:00:00 GMT</pubDate>
+            <description><![CDATA[Welcome to this blog.]]></description>
+        </item>
+    </channel>
+</rss>
