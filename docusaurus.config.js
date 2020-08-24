@@ -65,6 +65,12 @@ module.exports = {
 				theme: {
 					customCss: require.resolve("./src/css/custom.css"),
 				},
+				blog: {
+					feedOptions: {
+						type: "all",
+						copyright: `Copyright © ${new Date().getFullYear()} Sahil Satishkumar`,
+					},
+				},
 			},
 		],
 	],

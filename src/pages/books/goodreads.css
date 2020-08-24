@@ -1,18 +1,23 @@
 .gr_grid_container {
-	/* customize grid container div here. eg: width: 500px; */
+	white-space: nowrap;
+	overflow-y: hidden;
+	overflow-x: scroll;
 }
 
 .gr_grid_book_container {
-	float: left;
+	display: inline-block;
 	width: 98px;
 	height: 160px;
 	overflow: hidden;
 	border: 5px solid transparent;
-	display: flex;
-	align-items: center;
-	text-align: center;
 	padding: 5px;
 	transition: 0.4s all ease-in-out;
+}
+
+.gr_grid_book_container img {
+	position: relative;
+	top: 50%;
+	transform: translateY(-50%);
 }
 
 .gr_grid_book_container:hover {
@@ -24,6 +29,15 @@
 	flex-direction: column;
 	width: 100%;
 	padding: 1rem;
+}
+
+.favorite-quotes li {
+	border: 1px dashed transparent;
+	padding: 0.25rem 1rem;
+}
+
+.favorite-quotes li:hover {
+	border: 1px dashed var(--ifm-navbar-link-hover-color);
 }
 
 .gr_grid_branding {

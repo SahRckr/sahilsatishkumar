@@ -26,6 +26,19 @@ const Books = () => (
 			></script>
 		</Head>
 		<div className="bookshelf">
+			<ul className="favorite-quotes">
+				<b>Some of my favorite quotes so far:</b>
+				<li>
+					<cite>
+						Forces beyond your control can take everything you possess except
+						one thing. YOUR FREEDOM TO CHOOSE HOW WILL YOU RESPOND TO THE
+						SITUATION. You cannot control what happens to you in life, BUT YOU
+						CAN ALWAYS CONTROL WHAT YOU FEEL, AND DO ABOUT WHAT HAPPENS TO YOU.
+						<br />
+						<p align="right">- Viktor Frankl, Man's Search for Meaning</p>
+					</cite>
+				</li>
+			</ul>
 			<div id="gr_grid_widget_1587903274">
 				<h2>
 					<a
