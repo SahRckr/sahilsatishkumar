@@ -25,7 +25,7 @@ module.exports = {
 				src: "/img/favicon.svg",
 			},
 			items: [
-				{ to: "hire-me", label: "Hire me ❗️", position: "right" },
+				// { to: "hire-me", label: "Hire me ❗️", position: "right" },
 				{ to: "blog", label: "Blog", position: "right" },
 				{ to: "books", label: "Books", position: "right" },
 				{ to: "contact", label: "Contact", position: "right" },
@@ -59,6 +59,12 @@ module.exports = {
 		[
 			"@docusaurus/preset-classic",
 			{
+				blog: {
+          feedOptions: {
+            type: 'all',
+            copyright: `Copyright © ${new Date().getFullYear()} Sahil Satishkumar`,
+          },
+        },
 				docs: {
 					sidebarPath: require.resolve("./sidebars.js"),
 				},
