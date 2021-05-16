@@ -7,7 +7,7 @@
     <link rel="alternate" href="https://sahilsatishkumar.dev/blog"/>
     <subtitle>Sahil Satishkumar (@sahrckr) Blog</subtitle>
     <icon>https://sahilsatishkumar.dev/img/header.ico</icon>
-    <rights>Copyright © 2020 Sahil Satishkumar</rights>
+    <rights>Copyright © 2021 Sahil Satishkumar</rights>
     <entry>
         <title type="html"><![CDATA[npm 📦 React OpenTable]]></title>
         <id>npm 📦 React OpenTable</id>
@@ -24,8 +24,8 @@
     </entry>
     <entry>
         <title type="html"><![CDATA[Hello World]]></title>
-        <id>hello-world</id>
-        <link href="https://sahilsatishkumar.dev/blog/hello-world"/>
+        <id>Hello World</id>
+        <link href="https://sahilsatishkumar.dev/blog/2020/04/26/hello-world"/>
         <updated>2020-04-26T00:00:00.000Z</updated>
         <summary type="html"><![CDATA[Welcome to this blog.]]></summary>
     </entry>
