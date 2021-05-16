@@ -18,7 +18,7 @@ const HireMe = () => (
 			</span>
 			<iframe
 				title="resume"
-				src="./Sahil_Satishkumar_2020.pdf#view=FitH&toolbar=0&navpanes=0&scrollbar=0"
+				src="./Sahil_Satishkumar_2021.pdf#view=FitH&toolbar=0&navpanes=0&scrollbar=0"
 				importance="low"
 				loading="lazy"
 				frameBorder="0"
